@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asin Road Tourism | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', system-ui, 'Inter', sans-serif; background-color: #fefcf5; }
+        
+        .navbar-custom {
+            background: linear-gradient(135deg, #1b4d2e 0%, #0f3b23 100%);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .navbar-custom .navbar-brand {
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-size: 1.65rem;
+            color: #f9f3e2;
+        }
+        .navbar-custom .navbar-brand:hover { color: #ffecb3; }
+        .navbar-custom .nav-link {
+            color: #f8f5e9;
+            font-weight: 500;
+            margin: 0 4px;
+            transition: 0.2s;
+            border-radius: 30px;
+            padding: 8px 16px;
+        }
+        .navbar-custom .nav-link:hover,
+        .navbar-custom .nav-link.active {
+            background-color: rgba(255, 242, 204, 0.18);
+            color: #fff3cf;
+        }
+        
+        .hero-section {
+            height: 75vh;
+            min-height: 500px;
+            background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 30, 10, 0.65)), url('https://images.pexels.com/photos/258117/pexels-photo-258117.jpeg?auto=compress&cs=tinysrgb&w=1600');
+            background-size: cover;
+            background-position: center 30%;
+            border-radius: 0 0 30px 30px;
+        }
+        .hero-section h1 { text-shadow: 2px 4px 12px rgba(0,0,0,0.4); }
+        
+        .card {
+            border: none;
+            border-radius: 28px;
+            transition: all 0.25s ease;
+            overflow: hidden;
+            box-shadow: 0 15px 30px -12px rgba(0, 0, 0, 0.1);
+        }
+        .card:hover { transform: translateY(-7px); box-shadow: 0 25px 40px -14px rgba(0, 32, 0, 0.2); }
+        .card-img-top {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .card:hover img { transform: scale(1.03); }
+        .btn-success-custom {
+            background-color: #2a6b47;
+            border: none;
+            border-radius: 40px;
+            padding: 8px 26px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+        .btn-success-custom:hover { 
+            background-color: #1c5237; 
+            transform: scale(0.97);
+        }
+        footer { background: #0c2b1d; color: #ddd8c6; }
+        
+        .card-img-fallback {
+            background: linear-gradient(135deg, #2a6b47, #1b4d2e);
+            height: 230px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><i class="fas fa-tree me-2"></i>ASIN ROAD TOURISM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="pooten.html">Pooten Splash</a></li>
+                <li class="nav-item"><a class="nav-link" href="palmgrove.html">Palm Grove</a></li>
+                <li class="nav-item"><a class="nav-link" href="riverview.html">Riverview</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="hero-section d-flex align-items-center text-center text-white">
+    <div class="container">
+        <h1 class="display-3 fw-bold">Discover Asin Road</h1>
+        <p class="lead fs-4 mt-2">Hidden waterfalls, palm-fringed escapes, and serene river views</p>
+        <a href="#explore" class="btn btn-outline-light btn-lg mt-3 rounded-pill px-4">Explore now <i class="fas fa-arrow-down ms-2"></i></a>
+    </div>
+</header>
+
+<section id="explore" class="container py-5">
+    <div class="row g-4 justify-content-center">
+
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="./pooten.JPG" class="card-img-top" alt="Pooten Splash riverside spot">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold"><i class="fas fa-water text-success me-2"></i>Pooten Splash</h5>
+                    <p class="card-text text-secondary">A peaceful riverside spot perfect for relaxation and swimming.</p>
+                    <a href="pooten.html" class="btn btn-success-custom w-100">Explore →</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="./palmgrove.jpg" class="card-img-top" alt="Palm Grove tropical vibes">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold"><i class="fas fa-leaf text-success me-2"></i>Palm Grove</h5>
+                    <p class="card-text text-secondary">Tropical vibes surrounded by palm trees and cool breeze.</p>
+                    <a href="palmgrove.html" class="btn btn-success-custom w-100">Explore →</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="./riverview.jpg" class="card-img-top" alt="Riverview scenic landscapes">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold"><i class="fas fa-mountain text-success me-2"></i>Riverview</h5>
+                    <p class="card-text text-secondary">Scenic river landscapes and fresh mountain air.</p>
+                    <a href="riverview.html" class="btn btn-success-custom w-100">Explore →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container text-center mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="p-4 rounded-4 bg-white shadow-sm">
+                <i class="fas fa-phone-alt text-success fs-2 mb-2"></i>
+                <h5 class="fw-bold">Plan your visit today!</h5>
+                <p class="text-muted">Contact us: 0947-950-0441 | 0917-506-6931</p>
+                <a href="contact.html" class="btn btn-outline-success rounded-pill px-4">Get in touch <i class="fas fa-arrow-right ms-1"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="text-center py-4">
+    <div class="container">
+        <p class="mb-0">&copy; 2026 Asin Road Tourism Project | <i class="fas fa-heart text-danger"></i> Discover Nature's Peace</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
